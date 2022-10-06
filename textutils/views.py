@@ -17,6 +17,18 @@ def index(request):
     return render(request, 'index.html')
     # return HttpResponse("Hello")
 
+def info(request):
+#   get the info from index
+    return render(request, "info.html")
+
+def ContactUS(request):
+    dj_text = request.POST.get('text','default')
+    removepunc = request.POST.get('removepunc','off')
+    fullcaps = request.POST.get('fullcaps','off')
+    newlineremover = request.POST.get('newlineremover','off')
+    extraspaceremover = request.POST.get('extraspaceremover','off')
+    return render(request, "contact.html")
+
 def contact(request):
     return render(request, 'contact.html')
 
