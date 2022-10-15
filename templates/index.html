@@ -4,6 +4,38 @@
 <h1>Welcome to the text analyser</h1>
 <h2>Enter your Text below :</h2>
 </center>
+<style type="text/css">
+        #fancybox-close {
+            right: -15px;
+            top: -15px
+        }
+
+        div#fancybox-content {
+            border-color: #FFFFFF
+        }
+
+        div#fancybox-title {
+            background-color: #FFFFFF
+        }
+
+        div#fancybox-outer {
+            background-color: #FFFFFF
+        }
+
+        div#fancybox-title-inside {
+            color: #333333
+        }
+</style>
+<script type="text/javascript" src="./index_files/jquery.js"></script>
+    <script type="text/javascript" src="./index_files/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="./index_files/ckeditor.js"></script>
+    <style>.cke {
+        visibility: hidden;
+    }</style>
+    <script type="text/javascript" src="./index_files/ckeditor.utils.js"></script>
+    <link rel="prev" title="Главная страница" href="http://www.nkrow.ru/">
+    <link rel="next" title="sdsad" href="http://www.nkrow.ru/video-s-mk-kati-upit/sdsad/">
+
   <div class="container">
       <br>
       <form action='/analyze' method='post'> {% csrf_token %}
