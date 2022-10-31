@@ -2,10 +2,15 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import pytube
+import pytorch
+import pandas as pd
+
+data = pd.read_csv('youtube.csv')
+
 
 
 def main():
-    """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'textutils.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -16,7 +21,3 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
-
-
-if __name__ == '__main__':
-    main()
