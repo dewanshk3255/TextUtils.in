@@ -8,9 +8,18 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 """
 
 import os
+from pytube import YouTube
+
+var = 12.5
+var2 = "String"
 
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'textutils.settings')
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'textutils.settings')
+
+application = get_wsgi_application()
+
 
 application = get_wsgi_application()
